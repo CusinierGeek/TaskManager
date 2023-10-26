@@ -183,7 +183,7 @@ class TaskTracker {
             const parsedTasks: Task[] = JSON.parse(storedTasks);
             this.tasks = parsedTasks.map((task: Task) => new Task(task.title, task.description, task.completed, task.lastModified, task.id));
         } else {
-            this.tasks = [new Task("Ex: Faire la vaisselle", "Ex: Effectuer des mouvements circulaires sur la vaisselle avec une éponge", false, "2021-03-01 12:00:00", 1)];
+            this.tasks = [new Task("Ex: Faire la vaisselle", "Ex: Effectuer des mouvements circulaires sur la vaisselle avec une éponge", true, "2021-03-01 12:00:00", 1)];
         }
         if (storedTitle) {
             titleInput.value = storedTitle;

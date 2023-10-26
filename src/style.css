@@ -241,3 +241,38 @@ td:nth-child(4) input {
         display: none;
     }
 }
+
+@media (max-width: 600px) {
+    #app {
+        padding: 1rem;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #inputSection {
+        flex-direction: column;
+    }
+
+    #tasksTableHeader {
+        display: none;
+    }
+    #tasksTable {
+        width: 100%;
+    }
+    .commandBtn {
+        width: 50%;
+    }
+
+    tr :last-child {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    tr :first-child {
+        display: flex;
+        justify-content: space-between;
+    }
+}
